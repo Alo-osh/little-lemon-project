@@ -1,8 +1,10 @@
-function CustomerSay(){
+function CustomersSay({getRating,getUserPhoto,review}){
     return(
-        <div>
-            <h2>hi</h2>
+        <div className="customers">
+            <img src={getRating}></img>
+            <img src={getUserPhoto}></img>
+            <h4>{review}</h4>
         </div>
     )
 }
-export default CustomerSay;
+export default CustomersSay;
