@@ -1,8 +1,16 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import updateTimes from './Components/updateTimes';
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("removes reserved time correctly", () => {
+  const initialState = {
+    times: ["17:00", "18:00", "19:00"],
+  };
+
+  const action = {
+    type: "reserve_time",
+    payload: "17:00",
+  };
+
+  const result = updateTimes(initialState, action);
+
+  expect(result.times).toEqual(["18:00", "19:00"]);
 });

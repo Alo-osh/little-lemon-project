@@ -20,8 +20,9 @@ function Footer(){
                 </div>
                 <div>
                     <h4>Social Media links</h4>
-                    <a href=""><li>Facebook</li></a>
-                    <a href=""><li>Instagram</li></a>
+                    <a href="https://github.com/Alo-osh"><li>GitHub</li></a>
+                    <a href="https://medium.com/@habeebali072"><li>Medium</li></a>
+                    <a href="https://www.linkedin.com"><li>LinkedIn</li></a>
                 </div>
         </footer>
         </div>

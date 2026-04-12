@@ -3,6 +3,7 @@ import HomePage from './HomePage.js';
 import BookingPage from './BookingPage.js'
 import Nav from './Components/Nav.js'
 import Footer from './Components/Footer.js';
+import ConfirmedBooking from './Components/ConfirmedBooking.js';
 function App() {
   return (
     <div>
@@ -12,6 +13,8 @@ function App() {
         <Routes>
             <Route path="/" element={<HomePage />}></Route>
             <Route path="/booking" element={<BookingPage/>}></Route>
+                      <Route path="/ConfirmationPage" element={<ConfirmedBooking />}></Route>
+
         </Routes>
         <section id='about-section'>
          <Footer/>

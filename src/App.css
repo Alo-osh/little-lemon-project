@@ -130,26 +130,31 @@ header button{
 }
 fieldset{
   display: grid;
+  grid-template-columns: 400px;
  background-color: #F4CE14;
   border-radius: 16px;
-  max-width: 300px;
+  padding:40px;
   gap: 20px;
 }
 .Form{
-
-   justify-items: center;
+  display: grid;
+  height: 70%;
+  justify-items: center;
+  padding-top: 20px;
+  border-radius: 12px;
 }
 .Form input,select{
 border-radius: 5px;
 }
 footer{
   display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-columns: 50px 50px 50px 50px;
+  margin-top: 40px;
   gap: 200px;
 }
 footer img{
   width: 150px;
-  height: 300px;
+  height: 250px;
 }
 footer a{
    color: black;
@@ -165,4 +170,36 @@ footer div{
 }
 footer li{
   padding-top: 5px;
+}
+.confirming{
+  display: flex;
+  flex-direction: column;
+ background-color: #F4CE14;
+ color: #100f0f;
+ margin-right: 100px;
+ margin-left: 100px;
+ justify-content: center  ;
+ align-items: center;
+  border-radius: 16px;
+  padding:50px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.3);
+}
+.confirming h1{
+  text-align: center;
+
+}
+.confirming button{
+  background-color:#222;
+  color: #EDEFEE;
+  font-size: large;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  margin-top: 30px;
+}
+.confirming button:hover{
+    box-shadow:0 6px 15px rgba(14, 5, 5, 0.3);
+    transform: translateY(-2px);
+    transition: 0.3s;
+    background-color:#EE9972;
 }
