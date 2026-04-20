@@ -20,7 +20,7 @@ function Nav(){
                 <a href="#menu"><li>Menu</li></a>
                 <a href="#reservation"><li>Reservation</li></a>
                 <a href="#online"><li>Order online</li></a>
-                <a href="#login"><li>Login</li></a>
+                <Link to="/LogIn"><li>Login</li></Link>
 
 
             </ul>

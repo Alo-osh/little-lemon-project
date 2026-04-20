@@ -8,7 +8,9 @@ function Main(){
         <div>
          <Catagorey/>
         <CustomerInfo/>
-        <Chicago/>
+        <section id='about-section'>
+          <Chicago/>
+         </section>
         </div>
     )
 }

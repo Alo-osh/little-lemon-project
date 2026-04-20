@@ -2,7 +2,7 @@
 .navigation{
   display: flex;
   justify-content: center;
- padding: 1rem;
+  padding: 1rem;
 }
 .navigation img{
   padding-right: 100px;
@@ -16,11 +16,13 @@
 .list > a{
   color: black;
   text-decoration: none;
-  padding-right: 1rem;;
+  padding-right: 1rem;
+  font-weight: 600;
 }
 .list > a:hover{
 transform:scale(1.15);
 transition: 0.5s;
+
 }
 header {
   font-size: large;
@@ -48,9 +50,13 @@ header button{
   border-radius: 10px;
   padding: 10px;
   margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: 600;
 }
   header button:hover{
   background-color: #EE9972;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 .specials{
   display: grid;
@@ -70,7 +76,7 @@ header button{
   color: #EE9972;
   margin-left:25%;
 }
-.catagorey .fistTwoObjects{
+.catagorey .firstTwoObjects{
   margin-left: 100px;
   display: grid;
     grid-template-columns:100px 100px ;
@@ -84,11 +90,15 @@ header button{
   padding: 10px;
   width: 150px;
   margin-top: 30px;
+  font-weight: 600;
 
 }
 .catagorey button:hover{
    background-color: #EE9972;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
+
 .dishes{
     margin-left: 80px;
     margin-top: 30px;
@@ -112,18 +122,46 @@ header button{
     color: #161a18;
 }
 .customers{
-  background-color: #c7cecb;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows:25px 50px 50px auto;
+  background-color: #F2EFEA;
   border-radius: 10px;
   margin: 20px;
   margin-right: 100px;
 }
 .customers img{
-   width:20%;
-  height: 20px;
-  border-radius: 10px;
+  grid-column: 1;
+  grid-row: 2/3;
+  width:70%;
+  height: 80px;
+  margin-left: 20px;
+  margin-top: 10px;
+  border-radius:10px;
   object-fit:cover;
 }
+.customers p{
+  grid-column: 1/-1;
+  grid-row: 4;
+  margin-left: 10px;
+  color: #2f2f2f;
+}
+.customers span{
+  color: #d4a017;
+  margin-left: 15px;
+  font-size: 20px;
+}
+.customers h4{
+grid-row: 2;
+grid-column: 2;
+padding-top: 13px;
+margin-left: 5px;
+}
 .coco{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #E7D8C9;
   display: grid;
   grid-template-columns:300px 300px 300px 300px ;
 
@@ -148,6 +186,8 @@ border-radius: 5px;
 }
 footer{
   display: grid;
+  background-color: #EDE7D5;
+  padding-top: 20px;
   grid-template-columns: 50px 50px 50px 50px;
   margin-top: 40px;
   gap: 200px;
@@ -170,6 +210,9 @@ footer div{
 }
 footer li{
   padding-top: 5px;
+}
+.background{
+  background-color: #222;
 }
 .confirming{
   display: flex;
@@ -202,4 +245,112 @@ footer li{
     transform: translateY(-2px);
     transition: 0.3s;
     background-color:#EE9972;
+}
+.error_field{
+  position: absolute;
+  bottom: 345px;
+  padding-left: 75px;
+  color: red;
+  font-size: 12px;
+}
+.UrReview{
+  margin-left: 200px;
+  padding: 50px;
+   background-color:#efe2cf;
+  display: grid;
+  grid-template-rows:1fr 1fr auto;
+  place-items: center;
+  gap: 10px;
+  width:50%;
+  height: 100%;
+  box-shadow: 10px 10px 18px rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+    font-size: larger;
+
+}
+.UrReview button{
+    background-color:#222;
+  color: #EDEFEE;
+  font-size: large;
+  border-radius: 10px;
+  padding: 10px;
+  width: 150px;
+  margin-top: 30px;
+  font-weight: 600;
+
+}
+.score input{
+margin-left: 20px;
+}
+.review textarea{
+  width:400px;
+  height: 100px;
+  padding-top: 30px;
+  padding-left: 40px;
+  font-size: large;
+}
+.UrReview span{
+  padding: 10px;
+  font-size: 50px;
+  color:#d4a017;
+}
+.RButton button{
+  display: block;
+  margin-left: 90vh;
+  padding-left: 20px;
+  background-color: #F4B400;
+  font-size: larger;
+  border-radius: 14px;
+  padding: 15px;
+  width: 150px;
+  margin-top: 30px;
+  font-weight: 600;
+}
+.RButton button:hover{
+  background-color: #6b2c04;
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+.chicago{
+  margin-top: 20px;
+  font-size: large;
+  display: grid;
+  height: 40%;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 80px 80px 400px;
+  padding-left: 100px;
+  color: #050505;
+}
+.chicago h4{
+  color: #495E57;
+  grid-column: 1;
+  padding-top: 10px;
+}
+.chicago p{
+  grid-column: 1;
+}
+.chicago img{
+  object-fit: cover;
+  position: relative;
+  width:300px;
+  height: 300px;
+}
+.img1{
+  position: absolute;
+  top: -120px;
+  left: 220px;
+  z-index: 1;
+  border-radius: 20px;
+}
+.img2{
+  position: absolute;
+  top: -250px;
+  left: 20px;
+  z-index: 0;
+  border-radius: 20px;
+}
+.chicago h1{
+  padding-top: 20px;
+  color:#495E57;
+  font-weight: 800;
 }

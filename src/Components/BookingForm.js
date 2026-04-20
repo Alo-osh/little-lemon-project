@@ -4,7 +4,7 @@ function BookingForm({navigate,submitForm,availableTimes,setAvailableTimes,date,
 
     const[time,setTime]=useState("17:00");
     const[num,setNum]=useState(0);
-    const[ocasion,setocasion]=useState(["Birthday","Anniversary"]);
+    const[ocasion,setocasion]=useState("Birthday");
     const handleSubmit=(e)=>{
         e.preventDefault();
         setAvailableTimes({type:"reserve_time",payload:time});
@@ -31,7 +31,7 @@ function BookingForm({navigate,submitForm,availableTimes,setAvailableTimes,date,
         <form onSubmit={handleSubmit}>
             <fieldset>
                 <div>
-        <label for="Date">Date: </label>
+        <label htmlFor="Date">Date: </label>
         <input type="date" name="date" value={date} onChange={(e)=>setDate(e.target.value)} required></input>
         </div>
         <div>

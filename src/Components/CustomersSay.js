@@ -1,9 +1,11 @@
-function CustomersSay({getRating,getUserPhoto,review}){
+function CustomersSay({Name,getRating,getUserPhoto,UserReview}){
+   
     return(
         <div className="customers">
-            <img src={getRating}></img>
-            <img src={getUserPhoto}></img>
-            <h4>{review}</h4>
+            <span>{getRating}</span>
+            <img alt="userPhoto" src={getUserPhoto}></img>
+            <h4>{Name}</h4>
+            <p>{UserReview}</p>
         </div>
     )
 }
