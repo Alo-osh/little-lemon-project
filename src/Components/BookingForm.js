@@ -29,8 +29,9 @@ function BookingForm({navigate,submitForm,availableTimes,setAvailableTimes,date,
     return(
         <div className="Form">
         <form onSubmit={handleSubmit}>
-            <fieldset>
+            <fieldset className="reservingFeild">
                 <div>
+                <h3>Reserve a Table</h3>
         <label htmlFor="Date">Date: </label>
         <input type="date" name="date" value={date} onChange={(e)=>setDate(e.target.value)} required></input>
         </div>

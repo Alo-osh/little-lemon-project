@@ -5,7 +5,6 @@ const handleClick=()=>{
     alert("Thank you for your review")
 }
 const Review = () => {
-    
     const [review,setReview]=useState();
     const [rating,setRating]=useState(0);
   return (

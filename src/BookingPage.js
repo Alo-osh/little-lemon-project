@@ -4,9 +4,11 @@ import Footer from "./Components/Footer";
 function BookingPage(){
 
     return(
+        <div>
         <div className="Form">
         <MainForBookingPage />
-        <Footer/>
+        </div>
+            <Footer/>
         </div>
     );
 }

@@ -2,7 +2,7 @@ import "../App.css";
 import logo from '../images/Logo.svg';
 import {Link} from 'react-router-dom'
 function Nav(){
-    const handleClick = (anchor) => () => {
+   const handleClick = (anchor) => () => {
     const id = `${anchor}-section`;
     const element = document.getElementById(id);
     if (element) {
@@ -17,9 +17,9 @@ function Nav(){
             <ul className="list">
                 <Link to="/"><li>Home</li></Link>
                 <Link onClick={handleClick("about")}><li>About</li></Link>
-                <a href="#menu"><li>Menu</li></a>
-                <a href="#reservation"><li>Reservation</li></a>
-                <a href="#online"><li>Order online</li></a>
+                <Link onClick={handleClick("menu")}><li>Menu</li></Link>
+                <Link to="/booking"><li>Reservation</li></Link>
+                <Link to="/OnlineOrdering"><li>Order online</li></Link>
                 <Link to="/LogIn"><li>Login</li></Link>
 
 

@@ -1,5 +1,14 @@
 import Asset from '../images/Asset 20@4x.png'
-import Nav from './Nav'
+import {Link} from "react-router-dom"
+const handleClick = (anchor) => () => {
+    const id = `${anchor}-section`;
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }}
 function Footer(){
     return(
         <div>
@@ -7,12 +16,12 @@ function Footer(){
             <img src={Asset}></img>
              <div className='dormatNav'>
                 <h4>Dormat navigation</h4>
-                <a href="/"><li>Home</li></a>
-             <a href="#about"><li>About</li></a>
-                <a href="#menu"><li>Menu</li></a>
-                <a href="#reservation"><li>Reservation</li></a>
-                <a href="#online"><li>Order online</li></a>
-                <a href="#login"><li>Login</li></a>
+                <Link to="/"><li>Home</li></Link>
+                <Link onClick={handleClick("about")}><li>About</li></Link>
+                <Link onClick={handleClick("menu")}><li>Menu</li></Link>
+                <Link to="/booking"><li>Reservation</li></Link>
+                <Link to="/OnlineOrdering"><li>Order online</li></Link>
+                <Link to="/LogIn"><li>Login</li></Link>
                 </div>
                 <div>
                     <h4>Contact Me</h4>

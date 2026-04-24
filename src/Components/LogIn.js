@@ -27,9 +27,10 @@ function LogIn(){
     }
 
     return(
-        <div className="Form">
+        <div className="loginForm">
         <form onSubmit={handleSubmit}>
-            <fieldset>
+            <fieldset className="feild">
+                <h3>LogIn</h3>
         <div>
             <label htmlFor="email">Email: </label>
             <input type="email" id="email" name="email" value={email} onChange={(e)=>{setEmail(e.target.value)}} placeholder="Email" required></input>

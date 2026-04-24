@@ -1,35 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import Specials from './Specials';
-    const objects=[
-        {
-        getImgSrc:() => require('../images/GreekSalad.png'),
-        dish:"Greek salad",
-        price:"$12.99",
-        description:"The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
-        link:"Order Delivery 🚴",
-    }
-    ,
-    {
-        getImgSrc:()=>require('../images/Bruchetta.png'),
-        dish:"Bruchetta",
-        price:"$5.99",
-        description:"our Bruchetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
-        link:"Order Delivery 🚴",
-    }
-    ,
-    {
-        getImgSrc:()=>require('../images/lemon dessert.jpg'),
-        dish:"Lemon Dessert",
-        price:"$5.00",
-        description:"This comes straight from grandma`s recipe book,every last ingredients has been sourced and is as authentic as can be imagined.",
-        link:"Order Delivery 🚴",
-    }
-];
+import { useItems } from './ItemsContext';
 function Catagorey(){
+const navigate=useNavigate();
+const {objects}=useItems();
 return(
     <div className='catagorey'>
         <div className='firstTwoObjects'>
             <h1>Specials</h1>
-            <button>Online Menu</button>
+            <button onClick={()=>navigate("/OnlineOrdering")}>Online Menu</button>
             </div>
             <div className='dishes'>
     {objects.map((object)=>(

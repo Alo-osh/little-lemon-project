@@ -22,7 +22,7 @@ function MainForBookingPage(){
               const[availableTimes,setAvailableTimes]=useReducer(updateTimes,intializeTimes());
     return(
         <div>
-            <main>
+          <main>
          <BookingForm date={date} navigate={navigate} submitForm={submitForm} setDate={setDate} setAvailableTimes={setAvailableTimes} availableTimes={availableTimes}/>
          </main>
         </div>
